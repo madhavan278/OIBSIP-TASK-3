@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  <h1>Temperature Converter</h1>
+  <div class="converter">
+    <h3>Enter Temperature In Degree</h3>
+    <input type="number" id="temperature" placeholder="Enter temperature"><br>
+    <h4>FROM:</h4>
+    <select id="input">
+      <option value="celsius">CELSIUS</option>
+      <option value="fahrenheit">FAHRENHEIT</option>
+      <option value="kelvin">KELVIN</option>
+    </select><br>
+    <h4>TO:</h4>
+    <select id="output">
+      <option value="celsius">CELSIUS</option>
+      <option value="fahrenheit">FAHRENHEIT</option>
+      <option value="kelvin">KELVIN</option>
+    </select><br><br>
+    <button onclick="convertTemperature()" class="convert-btn">Convert</button>
+    <p id="result"></p>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
